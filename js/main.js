@@ -13,10 +13,18 @@ const links = [
   }
 ]
 
-let text = '<ul>'
+let jsfile = document.getElementById("jsfile");
+let ul = document.createElement('ul');
 for(let i = 0, max = links.length; i < max; i++){
-  text = text + '<li><a href="' + links[i].url +'">' + links[i].label + '</a></li>';
+  let li = document.createElement('li');
+  let a = document.createElement('a');
+  let link = document.createTextNode(links[i].label)
+  a.appendChild(link);
+  a.title = links[i].label;
+  a.href = links[i].url;
+  li.appendChild(a);
+  ul.appendChild(li);
 }
-text = text + '</ul>';
-console.log(text);
-document.getElementById("jsfile").innerHTML = text;
+
+console.log(ul);
+jsfile.appendChild(ul);
