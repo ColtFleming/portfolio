@@ -4,8 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Index</title>
-    <!--<script src="js/main.js">-->
-    </script>
     <link rel="stylesheet" href="css/main.css">
     </link>
 </head>
@@ -15,35 +13,7 @@
       <p>I will make this prettier later this week!</p>
     </header>
     <div id='jsfile'></div>
-    <script>
-      const links = [
-  {
-    label: "Week 1",
-    url: "week1/index.html"
-  },
-  {
-    label:"Week 2",
-    url: "week2/index.html"
-  },
-  {
-    label:"Week 3",
-    url:"week3/index.html"
-  }
-];
-
-let jsfile = document.getElementById('jsfile');
-let ul = document.createElement('ul');
-for(let i = 0, max = links.length; i < max; i++){
-  let li = document.createElement('li');
-  let a = document.createElement('a');
-  let link = document.createTextNode(links[i].label)
-  a.appendChild(link);
-  a.title = links[i].label;
-  a.href = links[i].url;
-  li.appendChild(a);
-  ul.appendChild(li);
-}
-jsfile.appendChild(ul);
+    <script src="js/main.js">
     </script>
   </body>
 </html>
