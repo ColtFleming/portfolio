@@ -1,0 +1,11 @@
+body{
+    width: 50%;
+    margin: auto;
+}
+
+header {
+    display:flexbox;
+    border:2px;
+    border-style: double;
+    background-color: aqua;
+}
