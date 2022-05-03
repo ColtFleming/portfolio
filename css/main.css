@@ -1,13 +1,49 @@
 body{
     width: 50%;
     margin: auto;
+    background-color: #242582;
 }
 
 header {
     display:flexbox;
-    border:2px;
+    color: whitesmoke;
+    border:2px ;
     border-style: double;
-    background-color: aqua;
-    text-align: center;
-    
+    background-color:  #f64c72;
+    text-align: center;  
 }
+
+footer{
+    display:flexbox;
+    color: whitesmoke;
+    border:2px ;
+    border-style: double;
+    background-color:  #f64c72;
+    text-align: center;   
+} 
+
+#listItems {
+    display: flexbox;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin-left: 1rem;
+}
+
+#jsfile{
+    margin-bottom: 20em;
+}
+a:link, a:visited {
+    background-color: #242582;
+    color: #f64c72;
+    border: 2px solid #f64c72;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  a:hover, a:active {
+    background-color: #f64c72;
+    color: whitesmoke;
+  }
