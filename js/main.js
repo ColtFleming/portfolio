@@ -11,9 +11,9 @@ const links = [
     label:"Week 3",
     url:"week3/index.html"
   }
-]
+];
 
-let jsfile = document.getElementById("jsfile");
+let jsfile = document.getElementById('jsfile');
 let ul = document.createElement('ul');
 for(let i = 0, max = links.length; i < max; i++){
   let li = document.createElement('li');
@@ -25,6 +25,5 @@ for(let i = 0, max = links.length; i < max; i++){
   li.appendChild(a);
   ul.appendChild(li);
 }
-
-console.log(ul);
 jsfile.appendChild(ul);
+
