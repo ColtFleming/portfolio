@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <style>
+      #ticTac {
+         display: grid;
+         grid-template-columns: 1fr 1fr 1fr;
+         grid-template-rows: 1fr 1fr 1fr;
+         width: 500px;
+         height: 500px;
+         text-align: center;
+         font-size: 120px;
+      }
+
+      #top1 {
+         grid-column: 1 span 1;
+         grid-row: 1 span 1;
+      }
+
+      #top2 {
+         grid-column: 2 span 1;
+         grid-row: 1 span 1;
+      }
+
+      #top3 {
+         grid-column: 3 span 1;
+         grid-row: 1 span 1;
+      }
+
+      #mid1 {
+         grid-column: 1 span 1;
+         grid-row: 2 span 1;
+      }
+
+      #mid2 {
+         grid-column: 2 span 1;
+         grid-row: 2 span 1;
+      }
+
+      #mid3 {
+         grid-column: 3 span 1;
+         grid-row: 2 span 1;
+      }
+
+      #bottom1 {
+         grid-column: 1 span 1;
+         grid-row: 3 span 1;
+      }
+
+      #bottom2 {
+         grid-column: 2 span 1;
+         grid-row: 3 span 1;
+      }
+
+      #bottom3 {
+         grid-column: 3 span 1;
+         grid-row: 3 span 1;
+      }
+
+      div>* {
+         background-color: lightcyan;
+
+         padding-top: 10px;
+         /* border: 1px solid black; */
+      }
+
+      .top,
+      .mid {
+         border-bottom: 3px solid darkblue;
+      }
+
+      .top,
+      .mid,
+      .bottom {
+         border-right: 3px solid darkblue;
+      }
+
+      .right {
+         border-right: none;
+      }
+   </style>
+</head>
+
+<body>
+   <div id="ticTac">
+      <div id="top1" class="top"></div>
+      <div id="top2" class="top"></div>
+      <div id="top3" class="top right"></div>
+      <div id="mid1" class="mid"></div>
+      <div id="mid2" class="mid"></div>
+      <div id="mid3" class="mid right"></div>
+      <div id="bottom1" class="bottom"></div>
+      <div id="bottom2" class="bottom"></div>
+      <div id="bottom3" class="bottom right"></div>
+   </div>
+   <button type="button" id="reset" onclick="reset()">Reset</button>
+   <script>
+      let currentPlayer = 1;
+      let board = document.querySelector("#ticTac");
+
+      board.addEventListener('click', (a) => {
+         if (a.target.innerHTML.length > 0) {
+            // stretch challenge -- add rule for user to choose empty slot
+            alert("Choose another field!");
+         } else {
+            a.target.innerHTML = playerEntry()
+         }         
+      }, false);
+
+      function playerEntry() {         
+         if (currentPlayer === 1) {
+            currentPlayer = 2;
+            return 'X';
+         } else {
+            currentPlayer = 1;
+            return 'O';
+         }
+      }
+
+      function reset() {
+         const divBoard = document.querySelector('#ticTac');
+         for (let i = 0; i < divBoard.children.length; i++) {
+            divBoard.children[i].innerText = '';
+         }
+      }
+   </script>
+</body>
+
+</html>
