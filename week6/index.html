@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo List</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="myDIV" class="header">
+      <h1>To Dos</h1>
+    </div>
+
+    <ul id="myUL">
+      <li>Task</li>
+      <li class="checked">Task</li>
+      <li>Task</li>
+      <li>Task</li>
+    </ul>
+
+    <input type="text" id="myInput" placeholder="Title..." />
+    <span onclick="newElement()" class="addBtn">Add</span>
+
+    <div>
+      <label for="myDropdown">Choose an option:</label>
+
+      <select name="myDropdown" id="myDropdown">
+        <option value="All Tasks">All Tasks</option>
+        <option value="Active">Active</option>
+        <option value="Completed">Completed</option>
+      </select>
+    </div>
+    <script src="main.js"></script>
+    <footer>
+      <a href="../index.html">Home Page</a>
+    </footer>
+  </body>
+</html>
