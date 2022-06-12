@@ -1,0 +1,129 @@
+.ad-ad1 a:hover,
+.ad-ad1 a:active {
+    text-decoration: none;
+}
+
+.ad-ad1 h1 {
+    font-family: AcknowledgementMedium;
+    letter-spacing: 0.1em;
+    font-size: 36px;
+    margin: 0 0 0 0;
+    text-align: center;
+}
+
+.ad-ad1 h1:first-letter {
+    letter-spacing: -0.1em;
+}
+
+.ad-ad1 p {
+    margin: 0;
+    font-family: AcknowledgementMedium;
+    text-transform: uppercase;
+    font-size: 14px;
+    text-align: center;
+}
+
+aside>article:nth-of-type(2),
+.ad-ad2 {
+    background-image: url(../images/dukes.png);
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    -webkit-transition: -webkit-transform 2s linear 250ms;
+    transition: transform 2s linear 250ms;
+    min-height: 140px;
+}
+
+aside>article:nth-of-type(2) h1,
+.ad-ad2 h1 {
+    font-size: 20px;
+    font-family: AcknowledgementMedium;
+    padding: 0 30px 0 75px;
+    line-height: 1;
+    color: #999;
+    margin: 0 0 0 15px;
+    text-align: left;
+}
+
+aside>article:nth-of-type(2) h1 span,
+.ad-ad2 h1 span {
+    font-size: 30px;
+    color: #999999;
+    display: inline-block;
+    -webkit-transition: color 0.2s ease-out, -webkit-transform 0.2s ease-out;
+    transition: color 0.2s ease-out, transform 0.2s ease-out;
+}
+
+aside>article:nth-of-type(2) h1:hover span,
+.ad-ad2 h1:hover span {
+    color: #484848;
+    -webkit-transform: rotate(10deg) translateX(40px) scale(1.5);
+    transform: rotate(10deg) translateX(40px) scale(1.5);
+}
+
+aside>article:nth-of-type(2) p,
+.ad-ad2 p {
+    padding: 5px 3px 0 75px;
+    font-size: 0.85em;
+}
+
+.ad-ad3 {
+    background-image: url(../images/gradient.svg);
+    /* Gradient syntax for WebKit */
+    background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.4) 0, transparent 37%, transparent 83%, rgba(0, 0, 0, 0.06) 92%, transparent 98%);
+    /* Unprefixed W3C syntax */
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0, transparent 37%, transparent 83%, rgba(0, 0, 0, 0.06) 92%, transparent 98%);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    padding-bottom: 10px;
+}
+
+.ad-ad3 h1 {
+    color: #484848;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 1px 1px #fff;
+    font-family: LeagueGothic, Arial Narrow, Helvetica, sans-serif;
+    font-size: 42px;
+    letter-spacing: -1px;
+    margin: 20px 5px 0;
+    text-shadow: #fff 1px 1px;
+}
+
+.ad-ad3 h1:after {
+    content: '';
+    width: 90px;
+    height: 92px;
+    background-image: url(../images/bike_sprite.png);
+    display: block;
+    margin: auto;
+    -webkit-animation: bike steps(4, start) infinite 0.4s, move linear infinite 8s;
+    -webkit-animation-play-state: paused;
+}
+
+.ad-ad3 h1:hover:after {
+    -webkit-animation-play-state: running;
+}
+
+.ad-ad3 a {
+    text-decoration: none;
+}
+
+
+@-webkit-keyframes bike {
+    0% {
+      background-position: 0 0; }
+    100% {
+      background-position: -360px 0; } }
+  @-webkit-keyframes move {
+    0% {
+      -webkit-transform: translatex(-100px); }
+    100% {
+      -webkit-transform: translatex(100px); } }
+  .ad-ad4 {
+    position: relative; }
+    .no-geolocation .ad-ad4 {
+      display: none; }
+    .ad-ad4 h1 {
+      font-size: 20px;
+      font-family: AcknowledgementMedium;
+      text-align: center; }
