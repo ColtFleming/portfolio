@@ -84,7 +84,7 @@ fetch('products.json')
     var listItem = document.createElement('li');
     listItem.innerHTML = '<strong>' + data.products[i].Name + '</strong>';
     listItem.innerHTML +=' can be found in ' + data.products[i].Location + '.';
-    listItem.innerHTML +=' Cost: <strong>£' + data.products[i].Price + '</strong>';
+    listItem.innerHTML +=' Cost: <strong>$' + data.products[i].Price + '</strong>';
     myList.appendChild(listItem);
   }
 })
