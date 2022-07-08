@@ -48,6 +48,11 @@ const links = [
     label:"Week 10",
     url:"week10/index.html",
     class:"ten"
+  },
+  {
+    label:"Final",
+    url:"final/index.html",
+    class:"final"
   }
 ];
 
