@@ -1,4 +1,4 @@
-import icons from 'url:../img/icons.svg'; // Parcel 2
+import icons from 'url:../../img/icons.svg'; // Parcel 2
 
 export default class View {
   _data;
@@ -9,7 +9,7 @@ export default class View {
    * @param {boolean} [render=true] If false, create markup string instead of rendering to the DOM
    * @returns {undefined | string} A markup string is returned if render=false
    * @this {Object} View instance
-   * @author Colt Fleming
+   * @author Jonas Schmedtmann
    * @todo Finish implementation
    */
   render(data, render = true) {
@@ -46,7 +46,7 @@ export default class View {
         curEl.textContent = newEl.textContent;
       }
 
-      // Updates changed ATTRIBUTES
+      // Updates changed ATTRIBUES
       if (!newEl.isEqualNode(curEl))
         Array.from(newEl.attributes).forEach(attr =>
           curEl.setAttribute(attr.name, attr.value)
