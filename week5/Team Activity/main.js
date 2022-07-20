@@ -1,5 +1,5 @@
-import * as h from "./hiking-start" 
-import * as hikes from "./hikes";
+import * as h from "./hiking-start.js" 
+import * as hikes from "./hikes.js";
 
 // let items = document.querySelectorAll('li');
 
