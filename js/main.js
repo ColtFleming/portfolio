@@ -51,7 +51,7 @@ const links = [
   },
   {
     label:"Final",
-    url:"final/index.html",
+    url:"final/dist/index.html",
     class:"final"
   }
 ];
